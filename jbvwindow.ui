@@ -11,11 +11,76 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>JBVWindow</string>
+   <string>Java ByteCode Viewer</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件(F)</string>
+    </property>
+    <addaction name="openMenu"/>
+    <addaction name="exitMenu"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(H)</string>
+    </property>
+    <addaction name="helpMenu"/>
+    <addaction name="aboutMenu"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_H"/>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="openMenu">
+   <property name="text">
+    <string>打开...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="exitMenu">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="aboutMenu">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="helpMenu">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

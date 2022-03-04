@@ -10,10 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    jbvwindow.cpp
+    jbvwindow.cpp \
+    include/vpushbutton.cpp
 
 HEADERS += \
-    jbvwindow.h
+    jbvwindow.h \
+    include/vpushbutton.h
 
 FORMS += \
     jbvwindow.ui
