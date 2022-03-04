@@ -9,13 +9,15 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    leftnavwindow.cpp \
     main.cpp \
     jbvwindow.cpp \
-    include/vpushbutton.cpp
+    common/vpushbutton.cpp
 
 HEADERS += \
     jbvwindow.h \
-    include/vpushbutton.h
+    common/vpushbutton.h \
+    leftnavwindow.h
 
 FORMS += \
     jbvwindow.ui
